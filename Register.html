@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Register.css">
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/a4dc2c536f.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyAnKN0TGIgkc9HMyKJbSA3GDG-38YDh3jg",
+            authDomain: "silicon-valley-challenge-97eed.firebaseapp.com",
+            databaseURL: "https://silicon-valley-challenge-97eed-default-rtdb.firebaseio.com",
+            projectId: "silicon-valley-challenge-97eed",
+            storageBucket: "silicon-valley-challenge-97eed.appspot.com",
+            messagingSenderId: "745038711561",
+            appId: "1:745038711561:web:30a129962ef162a3cce1d8"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+    </script>
+    <section class="Form">
+        <center>
+            <div class="float-container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="float-image"
+                    style="margin-right: 20px;float: left; margin-top: 25px; margin-bottom: 50px;margin-left: 5px;">
+                    <img src="logo.png.png">
+                </div>
+                <div class="float-row" style="float: left; margin-left: 50px;">
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <div class="form-row">
+                            <div class="col-lg-7 col-md-7 col-sm-7">
+                                <button id="Home" class="btn1" onclick="location.href='index.html'"><i
+                                        class='fas fa-home' style='font-size:25px'></i></button>
+                            </div>
+                        </div>
+                        <h1>REGISTRATION</h1>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <input type="text" class="form-control" id="Name" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <input type="email" class="form-control" id="Email" placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                    <i class="fas fa-lock" id="icon" onclick="show()" style="color:#eeeeee;"></i>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="form-row">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="margin-top: 10px;">
+                                <label><b>Are you a student or a teacher?</b></label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7 col-md-7 col-sm-7" style="margin-top: -15px;">
+                                <label><input type="radio" class="form-control" id="teacher" name="optRadio"
+                                        value="Teacher" onclick="teacherClick()"><b>Teacher</b></label>
+                                <label><input type="radio" class="form-control" id="student" name="optRadio"
+                                        value="Student" onclick="studentClick()"><b>Student</b></label>
+                            </div>
+
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="col-lg-7 col-md-7 col-sm-7" id="Grade1">
+
+                                </div>
+                                <div id="subjects"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <button style="margin-top:20px; background-color: #00adb5;" id="Register"
+                                        type="submit" class="btn1">Register</button>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7 col-md-7 col-sm-7" style="margin-top: 20px;">
+                                    <label style="margin-top: 100px;"><b>Already a user? </b></label>
+                                    <button style="margin-top:5px; background-color: #00adb5;" id="Register"
+                                        type="submit" class="btn1" formaction="Login.html">Sign In</button>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+            </div>
+
+    </section>
+
+    <!--  <section>
+        <div class="copy_right_footer">
+            Developed by - Naishaa Goyal
+          </div>
+          
+      </section>-->
+    </center>
+    <script src="Register.js"></script>
+</body>
+
+</html>

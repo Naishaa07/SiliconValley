@@ -1,0 +1,86 @@
+.navbar{
+    margin: 0;
+    background-color: white;
+}
+.icon-bar{
+    color: black;
+}
+#qwe:hover .tooltiptext{
+    visibility: visible;
+}
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .copy_right_footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color:#222831;
+    line-height: 3;
+    text-align: center;
+ }
+ .navbar{
+    background-color: #393e46;
+     margin-bottom: 10px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+}
+a{
+    color: eeeeee; 
+    font-size: 25px;
+    margin-top: 0px;
+}
+@media screen and (min-width:1140px) {
+    #nav1, #nav2{
+        color: eeeeee; 
+        font-size: 25px;
+        padding-top: 37.5px;
+        padding-bottom: 37.5px;
+        background-color:#393e46
+    }
+    #title{
+        padding-top: 10px;
+    }
+}
+    @media screen and (max-width:1140px )and (min-width:900px) {
+        #nav1, #nav2{
+            color: eeeeee; 
+            font-size: 25px;
+            padding-top: 37.5px;
+            padding-bottom: 37.5px;
+            background-color:#393e46
+        }
+        #title{
+       padding-top: 80px;
+    }
+    }
+    @media screen and (max-width:900px )and (min-width:768px) {
+        #nav1, #nav2{
+            color: eeeeee; 
+            font-size: 25px;
+            padding-top: 37.5px;
+            padding-bottom: 37.5px;
+            background-color:#393e46
+        }
+        #title{
+        padding-top: 170px;
+    }
+    }
+    label{
+        margin-top: 100px;
+        font-family: lemonada;
+        font-size: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }

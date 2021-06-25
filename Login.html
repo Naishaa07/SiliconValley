@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/a4dc2c536f.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+       const config = {
+  apiKey: "AIzaSyAnKN0TGIgkc9HMyKJbSA3GDG-38YDh3jg",
+  authDomain: "silicon-valley-challenge-97eed.firebaseapp.com",
+  databaseURL: "https://silicon-valley-challenge-97eed-default-rtdb.firebaseio.com",
+  projectId: "silicon-valley-challenge-97eed",
+  storageBucket: "silicon-valley-challenge-97eed.appspot.com",
+  messagingSenderId: "745038711561",
+  appId: "1:745038711561:web:30a129962ef162a3cce1d8"
+};
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+    </script>
+
+
+
+    <section class="Form">
+
+        <center>
+            <form>
+            <div class="float-container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="float-image"
+                    style="margin-right: 20px;float: left; margin-top: 5px; margin-bottom: 50px;margin-left: 5px;">
+                    <img id = "leftImg" src="logo.png.png">
+                </div>
+                <div class="float-row" style="float: left; margin-left: 50px;">
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <div class="form-row">
+                            <div class="col-lg-7 col-md-7 col-sm-7">
+                                <button id="Home" class="btn1" formaction='index.html'><i
+                                        class='fas fa-home' style='font-size:25px'></i></button>
+                            </div>
+                        </div>
+                        <h1>LOGIN</h1>
+                        <form>
+                            <div class="form-row">
+                            <div class="col-lg-7 col-md-7 col-sm-7">
+                                <input type="email" class="form-control" id="signEmail" placeholder="Enter Email">
+                            </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7 col-md-7 col-sm-7">
+                            <input type="password" class="form-control" id="signPassword" placeholder="Password">
+                            <i class="fas fa-lock" id="icon" onclick="show()" style="color: #eeee;"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7 col-md-7 col-sm-7">
+                            <button class="btn1" id="Loginbtn" style="background-color: #00adb5;">Submit</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7 col-md-7 col-sm-7">
+                            <button class="btn1" id="forgotPassword" style="background-color: #00adb5;">Forgot Password</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7 col-md-7 col-sm-7">
+                            <h5>Not already with us?</h5>
+                            <button style="margin-top:5px;background-color: rgb(130, 133, 133);" id="register" type="submit" class="btn1"
+                                formaction='Register.html'>Register</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+
+    </section>
+    </center>
+    <script src="Login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+</body>
+
+</html>

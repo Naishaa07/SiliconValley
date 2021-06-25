@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+input{
+    background-color: #222831;
+    color:#eeeeee;
+    
+}
+::placeholder {
+    color: #eeeeee;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder {
+   color:#eeeeee;
+  }
+  
+  ::-ms-input-placeholder {
+   color: #eeeeee;
+  }
+body{ 
+    background-image: linear-gradient(#00adb5,#393e46);
+    background-repeat: repeat-x;
+    background-color: #393e46;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+.float-row{
+    background-color: #eeeeee;
+    display: flex;
+    border-radius: 50px;
+    width: 80vh;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.form-control{
+    height: 30px;
+    margin: 10px;
+}
+.btn1{
+    height: 30px;
+    width:fit-content;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h5{
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.btn1:hover{
+    color: blanchedalmond;
+}
+h1{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+#icon{
+    position: absolute;
+    font-size: 18px;
+    margin: 15px 0 0 -40px;
+    color: grey;
+}
+.float-image{
+    float: left;
+    margin-top: 25px; 
+    margin-bottom: 50px;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+#leftImg{
+    width: 450px;
+    height: 450px;
+}
+select{
+    background-color: #222831;
+    color:#eeeeee;
+    width: 170px;
+    height: 30px;
+    margin-top: 10px;
+}
+#Home{
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #00adb5;
+    margin-top: -30px;
+    padding:5px;
+    margin-left: 400px;
+    height: fit-content;
+}
+form .btn1{
+    height: 30px;
+    width:fit-content;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #00adb5;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn1:hover{
+    color: blanchedalmond;
+}

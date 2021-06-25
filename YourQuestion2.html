@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Questions.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lemonada">
+  <script src="https://kit.fontawesome.com/a4dc2c536f.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-functions.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+  <script>
+    var config = {
+      apiKey: "AIzaSyAnKN0TGIgkc9HMyKJbSA3GDG-38YDh3jg",
+      authDomain: "silicon-valley-challenge-97eed.firebaseapp.com",
+      databaseURL: "https://silicon-valley-challenge-97eed-default-rtdb.firebaseio.com",
+      projectId: "silicon-valley-challenge-97eed",
+      storageBucket: "silicon-valley-challenge-97eed.appspot.com",
+      messagingSenderId: "745038711561",
+      appId: "1:745038711561:web:30a129962ef162a3cce1d8"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+  </script>
+
+<nav class="navbar navbar-inverse row-no-gutters navbar-light" style="padding-left: 0;background-color: #393e46; margin-bottom: 10px;">
+  <div class="container-fluid" style="padding-left:0;">
+      <div class="navbar-header" style="padding-left:0;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="#">Logo</a>-->
+          <img src="logo.png.png" width="130" height="95" alt=""
+              style="margin-right: 20px;padding: 0;">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" id="navbar">
+         
+        </ul>
+      <ul class="nav navbar-nav navbar-right" id="rightNavbar"style="padding-top: 17px;">
+        <li id="qwe"><a href="Profile.html"><icon
+          class="glyphicon glyphicon-user"></icon style={color:black}> Profile</a><span id="tooltiptext"
+          class="tooltiptext"></span></li>
+        <li onclick="Signout()"><a><span
+                    class="glyphicon glyphicon-log-out"></span style={color:black}> Logout</a></li>
+    </ul>
+      </div>
+  </div>
+</nav>
+
+
+<label id="title"></label>
+ 
+    <p id="Message" style="margin-left: 10px;margin-right: 10px;padding-left:5px;padding-right:5px; margin-bottom: 50px;margin-top: 10px;"></p>
+  <br> <br> <br> <br> <br>
+
+<section>
+  <div class="copy_right_footer">
+      Developed by - Naishaa Goyal
+    </div>
+    
+</section>
+  <script src="YourQuestion2.js"></script>
+ 
+</body>
+
+
+</html>

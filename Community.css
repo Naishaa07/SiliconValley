@@ -1,0 +1,187 @@
+#qwe:hover .tooltiptext{
+    visibility: visible;
+}
+body{
+    background-image:linear-gradient(#eee,rgb(129, 230, 255), #eee );
+    background-repeat:no repeat;
+    background-position: 0 100px;
+    height: 100vh;
+}
+ .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px ;
+    position: absolute;
+    z-index: 1;   
+  }
+
+  #chat:hover .tooltiptext {
+    visibility: visible;
+    width:100px;
+    margin-left: 90px;
+    z-index: 0;
+  }
+  #chat{
+    list-style-type: none;
+  }
+.navbar{
+    background-color: #393e46;
+     margin-bottom: 10px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+}
+a{
+    color: eeeeee; 
+    font-size: 25px;
+    margin-top: 0px;
+}
+.copy_right_footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color:#222831;
+    line-height: 3;
+    text-align: center;
+ }
+ @media screen and (min-width:1140px) {
+    #nav1, #nav2{
+        color: eeeeee; 
+        font-size: 25px;
+        padding-top: 37.5px;
+        padding-bottom: 37.5px;
+        background-color:#393e46
+    }
+    #content{
+        padding-top: 10px;
+    }
+}
+    @media screen and (max-width:1140px )and (min-width:900px) {
+        #nav1, #nav2{
+            color: eeeeee; 
+            font-size: 25px;
+            padding-top: 37.5px;
+            padding-bottom: 37.5px;
+            background-color:#393e46
+        }
+        #content{
+       padding-top: 80px;
+    }
+    }
+    @media screen and (max-width:900px )and (min-width:768px) {
+        #nav1, #nav2{
+            color: eeeeee; 
+            font-size: 25px;
+            padding-top: 37.5px;
+            padding-bottom: 37.5px;
+            background-color:#393e46
+        }
+        #content{
+        padding-top: 170px;
+    }
+    }
+#content{
+    margin-top: 100px;
+}
+
+#sub{
+    background-color: #eee;
+    color:#222831;
+    width: 170px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#teachers button{
+    font-size: medium;
+    width: 100px;
+    font-weight: bold;
+    text-align: left;
+    height: 40px;
+}
+label{
+    margin-left: 20px;
+    
+}
+.form-control{
+    background-color: #222831;
+    color:#eeeeee;
+    width: 170px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;    
+}
+::placeholder {
+    color: #222831;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder {
+   color:#222831;
+  }
+  
+  ::-ms-input-placeholder {
+   color: #222831;
+  }
+#grades {
+    background-color: #eee;
+    color:#222831;
+    width: 170px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+   
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+   width: 20%;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: white;
+    
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #dbd6d6;
+    color:#009879;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009898;
+    
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+#teachers{
+    margin-bottom: 50px;
+}
+

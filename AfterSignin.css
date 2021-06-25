@@ -1,0 +1,144 @@
+body{
+    background-image:linear-gradient(#eee,rgb(121, 228, 255),#eee );
+    background-repeat:no repeat;
+    background-position:  0px 100px;
+    height: 90vh;
+}
+label{
+    font-size: 20px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 110px;
+    font-family: Lemonada;
+}
+section button{
+    font-size: medium;
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+    height: 50px;
+    
+}
+#qwe:hover .tooltiptext{
+    visibility: visible;
+}
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  #buttons button{
+      background-color: #eeeeee;
+     color: #0ab9ee;
+     border-color: #eee;
+     text-align: center;
+     font-family: lemonada;
+  }
+  #buttons button:hover{
+    background-color: black;
+   color: #eee;
+   border-color: #eee;
+}
+.copy_right_footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color:#222831;
+    line-height: 3;
+    text-align: center;
+ }
+ .navbar{
+    background-color: #393e46;
+     margin-bottom: 10px;
+     width: 100%;
+     position: fixed;
+     top: 0;
+    
+}
+a{
+    color: eeeeee; 
+    font-size: 25px;
+    margin-top: 0px;
+}
+@media screen and (min-width:1140px) {
+    #grades, #Chats{
+        color: eeeeee; 
+        font-size: 25px;
+        padding-top: 37.5px;
+        padding-bottom: 37.5px;
+        background-color:#393e46
+    }
+    #message{
+        padding-top: 10px;
+    }
+}
+    @media screen and (max-width:1140px )and (min-width:900px) {
+        #grades, #Chats{
+            color: eeeeee; 
+            font-size: 25px;
+            padding-top: 37.5px;
+            padding-bottom: 37.5px;
+            background-color:#393e46
+        }
+        #message{
+       padding-top: 80px;
+    }
+    }
+    @media screen and (max-width:900px )and (min-width:768px) {
+        #grades, #Chats{
+            color: eeeeee; 
+            font-size: 25px;
+            padding-top: 37.5px;
+            padding-bottom: 37.5px;
+            background-color:#393e46
+        }
+        #message{
+        padding-top: 170px;
+    }
+    }
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+#buttons{
+    padding-bottom: 50px;
+}
