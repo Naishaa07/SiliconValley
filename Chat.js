@@ -13,13 +13,13 @@ if (localStorage.getItem('sOrT') === "student") {
     //navbar
     document.getElementById("navbar").innerHTML = "<li><a href='AfterSignin.html' id='nav1'>Questions</a></li><li><a href='YourQuestions.html' id='nav1'>Your Questions</a></li><li><a href='tChat.html' id='nav2'>Chats</a></li><li><a href='Teacher.html' id='nav2'>Teachers</a></li><li><a href='Community.html' id='nav2'>Community</a></li>"
     document.getElementById('send').addEventListener('click', e => {
-        db.collection('users').doc(tId).update({
+        db.collection('users').doc(sId).update({
             //adds the userid of the user to the chats field of the person the user is chatting with in the databsae
             Chats: firebase.firestore.FieldValue.arrayUnion(userid)
         })
         db.collection('users').doc(userid).update({
             //adds the userid of the person that the user is chatting with to the chats field of the user in the database
-            Chats: firebase.firestore.FieldValue.arrayUnion(tId)
+            Chats: firebase.firestore.FieldValue.arrayUnion(sId)
         })
     })
     var docref = db.collection('users').get().then(
@@ -34,8 +34,12 @@ if (localStorage.getItem('sOrT') === "student") {
             });
         }
     )
-    document.getElementById("TeacherName").innerHTML = TName
-    localStorage.setItem('sId', userid)
+    db.collection('users').doc(localStorage.getItem('sId')).get().then(doc=>{
+        localStorage.setItem('otherName', doc.data().Name)
+        console.log(doc.data().Name)
+        document.getElementById("TeacherName").innerHTML = localStorage.getItem('otherName')
+    })
+    localStorage.setItem('tId', userid)
     document.getElementById("tooltiptext").innerHTML = localStorage.getItem('Name') + "<br>" + "Grade : " + localStorage.getItem('Grade')
 }
 db.collection('users').get().then(
@@ -52,8 +56,6 @@ document.getElementById('send').addEventListener('click', e => {
     var text = txt.value;
     e.preventDefault();
     if (text !== '') {
-        console.log(tId)
-        console.log(Name)
         var xyz = db.collection('users').doc(tId).collection(sId).doc();
         //adding the message sent to the collection of the person the user is contacting
         xyz.set({
@@ -74,6 +76,7 @@ document.getElementById('send').addEventListener('click', e => {
         })
     }
 })
+
 var sName = localStorage.getItem('sName')
 if (localStorage.getItem('sOrT') === "teacher") {
     //navbar for teacher
@@ -83,10 +86,10 @@ if (localStorage.getItem('sOrT') === "teacher") {
     db.collection('users').doc(userid).get().then((snapshot) => {
         localStorage.setItem('Tname', snapshot.data().Name)
     })
-    document.getElementById("TeacherName").innerHTML = sName
+
+    console.log(localStorage.getItem('otherName'))
 }
 var sId = localStorage.getItem('sId')
-console.log(sId)
 var tId = localStorage.getItem('tId');
 
 db.collection('users').doc(tId).collection(sId)
