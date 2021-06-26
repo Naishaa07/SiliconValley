@@ -32,13 +32,12 @@ document.getElementById("Loginbtn").addEventListener('click', e => {
 document.getElementById("forgotPassword").addEventListener('click', e => {
 //function forgotPassword(){
       e.preventDefault();
-      alert("in forgotpassword")
       var auth = firebase.auth();
       const email = document.getElementById('signEmail').value
       if(email !== "")
       {
           auth.sendPasswordResetEmail(email).then(function(){
-                window.alert("email has been sent")
+                window.alert("Email has been sent to you. Please check")
           })
           .catch(function(error){
               alert(error.message)
@@ -47,27 +46,6 @@ document.getElementById("forgotPassword").addEventListener('click', e => {
       }
   }
 )
-/*document.getElementById("forgotPassword").addEventListener('click', e => {
-    //In case the user forgets the password
-    e.preventDefault();
-    var email = txtEmail.value;
-    var auth = firebase.auth()
-    alert(email)
-    if (email !== "") {
-        
-        auth.sendPasswordResetEmail(email).then(function()
-        {
-            alert("Email has been sent to you. Please check.")
-        })
-        .catch(function(e){
-                const errorMessage = e.message
-                alert(errorMessage)
-                console.log(errorMessage)
-            })
-    } else {
-        alert("Please enter your email first")
-    }
-})*/
 
 function show() {
     //Code for viewing typed pasword
