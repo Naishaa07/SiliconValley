@@ -68,7 +68,7 @@ function changeSub() {
 }
 function chat(clicked_id) {
     //Option to chat with other students if the user is a student
-    localStorage.setItem('tId', clicked_id)
+    localStorage.setItem('sId', clicked_id)
     db.collection('users').doc(clicked_id).get().then(function (snapshot) {
         var Tname = (snapshot.data().Name);
         localStorage.setItem('Tname', Tname)
