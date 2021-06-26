@@ -72,7 +72,7 @@ function chat(clicked_id) {
     db.collection('users').doc(clicked_id).get().then(function (snapshot) {
         var Tname = (snapshot.data().Name);
         localStorage.setItem('Tname', Tname)
-        location.href = "chat.html"
+        window.location.href = "chat.html"
         localStorage.setItem('chatType', "s-s")
     })
 
