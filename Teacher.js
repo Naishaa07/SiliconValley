@@ -45,7 +45,7 @@ db.collection('users').get().then(
 }
 function chat(clicked_id){
     //the student can directly chat with the teacher
-   localStorage.setItem('tId', clicked_id)
+   localStorage.setItem('sId', clicked_id)
     db.collection('users').doc(clicked_id).get(). then(function(snapshot){
     var Tname = (snapshot.data().Name);
     localStorage.setItem('Tname', Tname)
