@@ -34,11 +34,7 @@ if (localStorage.getItem('sOrT') === "student") {
             });
         }
     )
-    db.collection('users').doc(localStorage.getItem('sId')).get().then(doc=>{
-        localStorage.setItem('otherName', doc.data().Name)
-        console.log(doc.data().Name)
-        document.getElementById("TeacherName").innerHTML = localStorage.getItem('otherName')
-    })
+    
     localStorage.setItem('tId', userid)
     document.getElementById("tooltiptext").innerHTML = localStorage.getItem('Name') + "<br>" + "Grade : " + localStorage.getItem('Grade')
 }
@@ -52,6 +48,11 @@ db.collection('users').get().then(
         });
     }
 )
+db.collection('users').doc(localStorage.getItem('sId')).get().then(doc=>{
+        localStorage.setItem('otherName', doc.data().Name)
+        console.log(doc.data().Name)
+        document.getElementById("TeacherName").innerHTML = localStorage.getItem('otherName')
+    })
 document.getElementById('send').addEventListener('click', e => {
     var text = txt.value;
     e.preventDefault();
@@ -86,8 +87,6 @@ if (localStorage.getItem('sOrT') === "teacher") {
     db.collection('users').doc(userid).get().then((snapshot) => {
         localStorage.setItem('Tname', snapshot.data().Name)
     })
-
-    console.log(localStorage.getItem('otherName'))
 }
 var sId = localStorage.getItem('sId')
 var tId = localStorage.getItem('tId');
